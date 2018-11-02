@@ -7,8 +7,9 @@ import {createSwitchNavigator} from 'react-navigation'
 import { YellowBox } from 'react-native';
 YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
 
-// Switch Navigator Imports
+// Switch Navigator Imports (Stack and Tabs)
 import SignLogStack from './src/StackViews/SignLogStack'
+import MainContentTab from './src/TabViews/MainTabApp'
 
 export default class App extends Component{
   render() {
@@ -20,7 +21,8 @@ export default class App extends Component{
 
 
 const SwitchScreens = createSwitchNavigator({
-  Initial: SignLogStack
+  Initial: SignLogStack,
+  Main: MainContentTab
 })
 
 

@@ -47,7 +47,7 @@ class LogInView extends Component {
                         onShowPress={this.toggle} secureTextEntry={this.state.securePass} />
                     {/* Button Next Visible when Texts are not empty */}
                     {this.checkTextState(this.state.email, this.state.password) && (<TingButtonNext size={50} color='white' style={styles.nextStyle}
-                        onPress={() => this.props.navigation.navigate('SignUpTwo')} />)}
+                        onPress={() => this.props.navigation.navigate('Main')} />)}
                 </View>
             </View>
         )

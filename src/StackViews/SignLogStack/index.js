@@ -13,6 +13,10 @@ const SignLogStack = createStackNavigator({
     SignUpTwo: EnterEmailView,
     SignUpThree: EnterBDayView,
     Login: Login
-})
+},
+{
+    initialRouteName:'Home'
+}
+)
 
 export default SignLogStack;
