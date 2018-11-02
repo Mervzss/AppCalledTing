@@ -1,5 +1,6 @@
 export {TingBackHeader} from '../CustomUI/CustomBackHeader/CustomBackHeader'
 export {TingDefaultButton} from '../CustomUI/CustomButtons/DefaultTingButton/TingButton'
 export {TingBigText} from '../CustomUI/CustomText/BigTingText'
+export {TingSmallText} from '../CustomUI/CustomText/SmallTingText'
 export {TingInput} from '../CustomUI/CustomTextInput/DefaultTingInput'
 export {TingButtonBack, TingButtonNext} from '../CustomUI/IconByPlatfrom/IconByPlatfrom'

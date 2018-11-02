@@ -6,7 +6,7 @@ import {TingButtonBack} from '../IconByPlatfrom/IconByPlatfrom'
 export const TingBackHeader = props =>(
     <Header style={{ backgroundColor: '#00A795', justifyContent: 'flex-start' }}>
         <Left style={{ paddingLeft: '3%' }}>
-            <TingButtonBack size={30} color='white' />
+            <TingButtonBack size={30} color='white' {...props}/>
         </Left>
     </Header>
 )
