@@ -1,7 +1,7 @@
 import React from 'react'
 import {View,Text,StyleSheet} from 'react-native'
 
-const BigTingText = props =>(
+export const TingBigText = props =>(
     <View style={{width:'90%'}}>
         <Text style={[styles.textStyle,props.style]}>{props.children}</Text>
     </View> 
@@ -14,4 +14,3 @@ const styles = StyleSheet.create({
       color:'white'
     },
   });
-export default BigTingText;

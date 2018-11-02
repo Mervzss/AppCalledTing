@@ -1,7 +1,7 @@
 import React from 'react'
 import {View,Text,StyleSheet,TouchableOpacity} from 'react-native'
 
-const TingButton = props =>(
+export const TingDefaultButton = props =>(
     <TouchableOpacity style={{ width: '90%' }} onPress={props.onPress}>
         <View style={props.invert ? styles.invertedcustomizeButton :styles.customizeButton}>
             <Text style={props.invert ? styles.invertedcustomTextButton :styles.customTextButton}>{props.children}</Text>
@@ -37,5 +37,3 @@ const styles = StyleSheet.create({
         margin:10
     }
   });
-
-export default TingButton;

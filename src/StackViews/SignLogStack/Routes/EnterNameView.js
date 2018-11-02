@@ -1,12 +1,8 @@
 import React,{Component} from 'react'
 import {View,StyleSheet} from 'react-native'
 //Custom Components
-import DefaultTingInput from '../../../components/CustomTextInput/DefaultTingInput'
-import BigTingText from '../../../components/CustomText/BigTingText'
-// Icon Button
-import {ButtonNext} from '../../../components/IconByPlatfrom/IconByPlatfrom'
-// import BackHeader from '../../../components/CustomBackHeader/CustomBackHeader'
-//  import {BackHeader} from '../../../components'
+import {TingBigText,TingBackHeader,TingInput,TingButtonNext} from '../../../components/CustomUI'
+
 
 class EnterNameView extends Component{
     static navigationOptions ={
@@ -15,12 +11,13 @@ class EnterNameView extends Component{
 render(){
     return(
         <View style={styles.headContainer}>
-        <View style={styles.innercontainer}>
-        <BigTingText>What is your name?</BigTingText>
-        <DefaultTingInput textTitle='FIRST NAME'/>
-        <DefaultTingInput textTitle='LAST  NAME'/>
-        <ButtonNext size={50} color='white' style={styles.nextStyle}/>
-        </View>
+        <TingBackHeader />
+            <View style={styles.innercontainer}>
+                <TingBigText>What is your name?</TingBigText>
+                <TingInput textTitle='FIRST NAME' />
+                <TingInput textTitle='LAST  NAME' />
+                <TingButtonNext size={50} color='white' style={styles.nextStyle} />
+            </View>
         </View>
     )
 }

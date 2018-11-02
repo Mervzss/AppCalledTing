@@ -1,8 +1,6 @@
 import React,{Component} from 'react'
-import {View,Text,StyleSheet} from 'react-native'
-import TingButton from '../../../components/CustomButtons/DefaultTingButton/TingButton'
-import BigTingText from '../../../components/CustomText/BigTingText'
-
+import {View,StyleSheet} from 'react-native'
+import {TingDefaultButton,TingBigText} from '../../../components/CustomUI'
 class WelcomeView extends Component{
     static navigationOptions ={
         header: null
@@ -10,9 +8,9 @@ class WelcomeView extends Component{
 render(){
     return(
         <View style={styles.container}>
-        <BigTingText>Welcome to Ting</BigTingText>
-            <TingButton  >Login</TingButton>
-            <TingButton onPress={() => this.props.navigation.navigate('SignUpOne')} invert={true}>Sign Up</TingButton>
+        <TingBigText>Welcome to Ting</TingBigText>
+            <TingDefaultButton  >Login</TingDefaultButton>
+            <TingDefaultButton onPress={() => this.props.navigation.navigate('SignUpOne')} invert={true}>Sign Up</TingDefaultButton>
         </View>
     )
 }

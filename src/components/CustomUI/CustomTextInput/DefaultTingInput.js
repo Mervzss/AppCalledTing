@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet, TextInput } from 'react-native'
 
-const DefaultTingInput = props => (
+export const TingInput = props => (
     <View style={{ width: '90%', marginBottom:'5%' }}>
         <Text style={styles.textStyle}> {props.textTitle}</Text>
         <TextInput style={styles.inputStyle}
@@ -23,4 +23,3 @@ const styles = StyleSheet.create({
     }
   });
 
-export default DefaultTingInput;
