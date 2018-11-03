@@ -13,7 +13,7 @@ class ProfileView extends Component {
             <View style={styles.parentContainer}>
             <TingHeaderText>Profile</TingHeaderText>
             <View style={styles.innercontainer}>
-                <Text>Profile View</Text>
+                <Text>Profile not been setup</Text>
             </View>
             </View>
         )
@@ -22,22 +22,6 @@ class ProfileView extends Component {
 
 
 const styles = StyleSheet.create({
-    container: {
-    },
-    avatar: {
-        backgroundColor: 'black',
-        width: 60,
-        height: 60,
-    },
-    badge: {
-        backgroundColor: 'red',
-        width: 20,
-        height: 20,
-        transform:[
-            {translateY:30},
-            {translateX:30}
-        ]
-    },
     parentContainer:{
         flex: 1,
         width: '100%',

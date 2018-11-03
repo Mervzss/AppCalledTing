@@ -13,7 +13,7 @@ class TripsView extends Component{
             <View style={styles.parentContainer}>
             <TingHeaderText>Trips</TingHeaderText>
             <View style={styles.innercontainer}>
-                <Text>Trips View</Text>
+                <Text>No Recent Trips</Text>
             </View>
             </View>
         )

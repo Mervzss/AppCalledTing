@@ -1,49 +1,63 @@
-const data_samples = [
+export const data_samples = [
+    {
+      id: 0,
+      room_size: "Apartment 1 Bedroom",
+      desc: "Centric Studio with roof top terrace",
+      price: "100 Php only per person ",
+      img: "https://placeimg.com/250/150/arch/1",
+      saved: false
+    },
     {
       id: 1,
-      name: "Room 1",
-      room_size: "Apartment 1 Bedroom",
-      img: "https://placeimg.com/250/150/arch/1"
+      room_size: "Apartment 2 Bedroom",
+      desc: "Great studio in Zurich center",
+      price: "250 Php only per person ",
+      img: "https://placeimg.com/250/150/arch/2",
+      saved: false
     },
     {
       id: 2,
-      name: "Room 2",
-      room_size: "Apartment 2 Bedroom",
-      img: "https://placeimg.com/250/150/arch/2"
+      room_size: "Apartment 1 Bedroom",
+      desc: "Pepper day Dr pepper",
+      price: "1k Php only per person ",
+      img: "https://placeimg.com/250/150/arch/3",
+      saved: false
     },
     {
       id: 3,
-      name: "Room 3",
-      room_size: "Apartment 1 Bedroom",
-      img: "https://placeimg.com/250/150/arch/3"
+      room_size: "Apartment 3 Bedroom",
+      desc: "No Bed no Room",
+      price: "Free Only!",
+      img: "https://placeimg.com/250/150/arch/4",
+      saved: false
     },
     {
       id: 4,
-      name: "Room 4",
-      room_size: "Apartment 3 Bedroom",
-      img: "https://placeimg.com/250/150/arch/4"
+      room_size: "Apartment 4 Bedroom",
+      desc: "all Things are very cofy",
+      price: "2k Php and 1 kiss to me",
+      img: "https://placeimg.com/250/150/arch/5",
+      saved: false
     },
     {
       id: 5,
-      name: "Room 5",
-      room_size: "Apartment 4 Bedroom",
-      img: "https://placeimg.com/250/150/arch/5"
+      room_size: "Apartment 2 Bedroom",
+      desc: "All my money is for you",
+      price: "Just be my Girlfriend",
+      img: "https://placeimg.com/250/150/arch/6",
+      saved: false
     },
     {
       id: 6,
-      name: "Room 6",
-      room_size: "Apartment 2 Bedroom",
-      img: "https://placeimg.com/250/150/arch/6"
-    },
-    {
-      id: 7,
-      name: "Room 7",
       room_size: "Apartment 1 Bedroom",
-      img: "https://placeimg.com/250/150/arch/7"
+      desc: "A high-end Techno room",
+      price: "Beat me at Dota first",
+      img: "https://placeimg.com/250/150/arch/7",
+      saved: false
     }
   ]
 
-const explores = [
+export const explores = [
     {
       id: 1,
       name: "Homes", 
@@ -72,7 +86,7 @@ const explores = [
   ]
 
 
-const saved_list = [
+export const saved_list = [
     {
       id: 1,
       name: "Homes", 

@@ -1,27 +1,50 @@
 import React, { Component } from 'react'
-import { View, StyleSheet,Text,Platform } from 'react-native'
+import { View, StyleSheet, Text, Platform, Image,ScrollView } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
-import {TingHeaderText} from '../../../components/CustomUI'
-class ExploreView extends Component{
-    static navigationOptions ={
-        tabBarIcon:({tintColor})=>(
-            <Icon name={Platform.OS === 'android' ? "md-search" : "ios-search"} size={25} color={tintColor}/>
+import { TingHeaderText } from '../../../components/CustomUI'
+import ImageList from '../../../components/ListingImage/ImageList'
+import ExImageList from '../../../components/ListingImage/ExpandedImageList/ExImageList'
+import { explores, data_samples } from '../TabAssets'
+class ExploreView extends Component {
+    static navigationOptions = {
+        tabBarIcon: ({ tintColor }) => (
+            <Icon name={Platform.OS === 'android' ? "md-search" : "ios-search"} size={25} color={tintColor} />
         )
     }
-    render(){
-        return(
+    state={
+        data :data_samples,
+        savedSelected:[]
+    }
+    saveSelected = (id) =>{
+        this.updateIconState(id)
+    }
+    updateIconState= (id)=>{
+        let stateHolder = this.state['data']
+        stateHolder[id]={
+            ...stateHolder[id],
+            saved: !stateHolder[id].saved
+        }
+        this.setState({
+        })
+    }
+    render() {
+        return (
             <View style={styles.parentContainer}>
-            <TingHeaderText>Explore</TingHeaderText>
-            <View style={styles.innercontainer}>
-                <Text>Explore View</Text>
-            </View>
+                <TingHeaderText>Explore</TingHeaderText>
+                <ScrollView contentContainerStyle={{paddingBottom:50}} style={styles.innercontainer}>
+                        <ImageList getData={explores} />
+                        <ExImageList getData={this.state.data} titleList='Zürich' savedIt={this.saveSelected}/>
+                        <ExImageList getData={this.state.data} titleList='Stockholm' savedIt={this.saveSelected}/>
+                        <ExImageList getData={this.state.data} titleList='Philippines' savedIt={this.saveSelected}/>
+                        <ExImageList getData={this.state.data} titleList='Singapore' savedIt={this.saveSelected}/>
+                </ScrollView>
             </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    parentContainer:{
+    parentContainer: {
         flex: 1,
         width: '100%',
         backgroundColor: 'white',
@@ -29,8 +52,9 @@ const styles = StyleSheet.create({
     innercontainer: {
         flex: 1,
         width: '100%',
-        justifyContent: 'center',
-        alignItems: 'center',
+    },
+    tingtextStyle:{
+        color:'#585858'
     },
 });
 

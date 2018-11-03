@@ -16,6 +16,14 @@ export const MainContentTab = createBottomTabNavigator({
     initialRouteName: 'Explore',
     tabBarOptions:{
         activeTintColor:'#ff3333',
+        labelStyle:{
+            fontWeight:'bold'
+        },
+        tabStyle:{
+            borderTopWidth:1,
+            borderColor:'#D8D8D8'
+        }
+        
     }
 }
 )
