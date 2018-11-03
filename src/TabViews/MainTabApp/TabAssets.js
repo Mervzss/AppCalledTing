@@ -113,3 +113,20 @@ export const saved_list = [
       img: "https://placeimg.com/350/250/arch/5"
     },
   ]
+
+  export const messageDetails = [
+    {
+       id: 0,
+       name: 'Christina',
+       msg: 'Hi, Unfortunately the apartment is full...',
+       img: "https://randomuser.me/api/portraits/women/30.jpg",
+       date: "08 Nov 2017"
+    },
+    {
+       id: 1,
+       name: 'Alexander',
+       msg: 'Hello, as we just agreed on by the phon',
+       img: "https://randomuser.me/api/portraits/men/4.jpg",
+       date: "09 Nov 2017"
+    }
+  ]

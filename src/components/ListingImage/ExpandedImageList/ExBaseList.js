@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Image, StyleSheet, Text, Platform} from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
-const ExBaseItem = props => {
+export const ExBaseItem = props => {
     return (
         <View style={{ paddingRight: '1.4%', paddingBottom: '1.4%' }}>
         <View style={styles.imageWrapper}>
@@ -67,4 +67,3 @@ const styles = StyleSheet.create({
         ]
     },
 });
-export default ExBaseItem;

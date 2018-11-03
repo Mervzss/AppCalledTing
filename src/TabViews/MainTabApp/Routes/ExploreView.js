@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { View, StyleSheet, Text, Platform, Image,ScrollView } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { TingHeaderText } from '../../../components/CustomUI'
-import ImageList from '../../../components/ListingImage/ImageList'
-import ExImageList from '../../../components/ListingImage/ExpandedImageList/ExImageList'
+import {ImageList,ExImageList} from '../../../components/ListingImage'
 import { explores, data_samples } from '../TabAssets'
 class ExploreView extends Component {
     static navigationOptions = {

@@ -1,8 +1,8 @@
 import React from 'react'
 import { FlatList, StyleSheet, View } from 'react-native'
-import ExBaseItem from './ExBaseList'
+import {ExBaseItem} from './ExBaseList'
 import { TingBigText } from '../../CustomUI'
-const ExImageList = props => {
+export const ExImageList = props => {
     return (
         <View style={{ width: '100%'}}>
             <View style={styles.tingtextView}>
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     tingtextView: {
         width: '100%',
         paddingTop: '5%',
-        paddingLeft: '5%',
+        paddingLeft: '3%',
         marginLeft: '3%',
     },
     tingtextStyle: {
@@ -50,4 +50,3 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ExImageList;

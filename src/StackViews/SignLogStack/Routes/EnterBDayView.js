@@ -26,7 +26,7 @@ class EnterBDayView extends Component {
                 </TingSmallText>
                     <TingInput textTitle='BIRTHDAY' placeholder='10/5/2018/' placeholderTextColor='white' keyboardType='numeric'
                         value={this.state.birthday} onChangeText={this.onbirthdayChange} />
-                        {/* Button Next Visible when Texts are not empty */}
+                    {/* Button Next Visible when Texts are not empty */}
                     {(this.state.birthday !== '' ? true : false) && (<TingButtonNext size={50} color='white' style={styles.nextStyle} onPress={() => this.props.navigation.navigate('Home')} />)}
                 </View>
             </View>

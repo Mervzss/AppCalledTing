@@ -1,6 +1,5 @@
 import React from 'react'
 import { Platform } from 'react-native'
-// import {Icon} from 'native-base'
 import Icon from 'react-native-vector-icons/Ionicons'
 
 export const TingButtonNext = props => {
