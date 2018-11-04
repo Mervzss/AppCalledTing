@@ -10,23 +10,13 @@ class EnterNameView extends Component {
     }
     state = { firstName: "", lastName: "" }
 
-    onfirstnameChange = fname => {
+    onUpdateText = (key, val) => {
         this.setState({
-            firstName: fname
-        })
-    }
-    onlastnameChange = lname => {
-        this.setState({
-            lastName: lname
+            [key]: val
         })
     }
     checkTextState = (fname, lname) => {
-        if (fname !== '' && lname !== '') {
-            return true
-        }
-        else {
-            return false;
-        }
+        return fname !== '' && lname !== '' ? true : false
     }
     render() {
         return (
@@ -34,8 +24,8 @@ class EnterNameView extends Component {
                 <TingBackHeader onPress={() => this.props.navigation.goBack()} />
                 <View style={styles.innercontainer}>
                     <TingBigText>What is your name?</TingBigText>
-                    <TingInput textTitle='FIRST NAME' value={this.state.firstName} onChangeText={this.onfirstnameChange} keyboardType={"numeric"} />
-                    <TingInput textTitle='LAST  NAME' value={this.state.lastName} onChangeText={this.onlastnameChange} />
+                    <TingInput textTitle='FIRST NAME' value={this.state.firstName} onChangeText={(val) => this.onUpdateText('firstName', val)} />
+                    <TingInput textTitle='LAST  NAME' value={this.state.lastName} onChangeText={(val) => this.onUpdateText('lastName', val)} />
                     {/* Button Next Visible when Texts are not empty */}
                     {this.checkTextState(this.state.firstName, this.state.lastName) && (<TingButtonNext size={50} color='white' style={styles.nextStyle}
                         onPress={() => this.props.navigation.navigate('SignUpTwo')} />)}

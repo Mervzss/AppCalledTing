@@ -22,14 +22,15 @@ class EnterEmailView extends Component {
                 <TingBackHeader onPress={() => this.props.navigation.goBack()} />
                 <View style={styles.innercontainer}>
                     <TingBigText>And, your email?</TingBigText>
-                    <TingInput textTitle='EMAIL' keyboardType='email-address' value={this.state.email} onChangeText={this.onemailChange} />
+                    <TingInput textTitle='EMAIL' keyboardType='email-address' value={this.state.email}
+                        keyboardType='email-address' onChangeText={this.onemailChange} />
                     <View style={styles.middleContainer}>
                         <View style={{ width: '75%' }}>
                             <TingSmallText>
                                 Id like to receive marketing and policy
                                 communications from ting and its
                                 partners.
-            </TingSmallText>
+                            </TingSmallText>
                         </View>
                         <View style={{ width: '15%' }}>
                             <Switch style={{ alignSelf: 'flex-start' }} />

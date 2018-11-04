@@ -13,23 +13,13 @@ class LogInView extends Component {
         password: '',
         securePass: true
     }
-    onemailChange = (email) => {
+    onUpdateText = (key, val) => {
         this.setState({
-            email: email
-        })
-    }
-    onpasswordChange = (pass) => {
-        this.setState({
-            password: pass
+            [key]: val
         })
     }
     checkTextState = (email, pass) => {
-        if (email !== '' && pass !== '') {
-            return true
-        }
-        else {
-            return false;
-        }
+        return email !== '' && pass !== '' ? true : false
     }
     toggle = () => {
         this.setState({
@@ -42,8 +32,8 @@ class LogInView extends Component {
                 <TingBackHeader onPress={() => this.props.navigation.goBack()} />
                 <View style={styles.innercontainer}>
                     <TingBigText>Login</TingBigText>
-                    <TingInput textTitle='EMAIL' value={this.state.email} onChangeText={this.onemailChange} keyboardType={"numeric"} />
-                    <TingInput textTitle='PASSWORD' passToggle={true} value={this.state.password} onChangeText={this.onpasswordChange}
+                    <TingInput textTitle='EMAIL' value={this.state.email} onChangeText={(val) => this.onUpdateText('email', val)} keyboardType={"email-address"} />
+                    <TingInput textTitle='PASSWORD' passToggle={true} value={this.state.password} onChangeText={(val) => this.onUpdateText('password', val)}
                         onShowPress={this.toggle} secureTextEntry={this.state.securePass} />
                     {/* Button Next Visible when Texts are not empty */}
                     {this.checkTextState(this.state.email, this.state.password) && (<TingButtonNext size={50} color='white' style={styles.nextStyle}
