@@ -1,9 +1,10 @@
 import React from 'react'
-import { View, Image, StyleSheet, Text } from 'react-native'
+import { View, Image, StyleSheet, Text,TouchableOpacity } from 'react-native'
 
 export const BaseList = props => {
     return (
         <View style={styles.wrapMessage}>
+            <TouchableOpacity>
             <View style={styles.messageStyle}>
                 <View style={{ width: '18%' }}>
                     <Image style={styles.imageStyle} source={{ uri: props.imgSource }} resizeMode='cover' />
@@ -22,6 +23,7 @@ export const BaseList = props => {
                 </View>
 
             </View>
+            </TouchableOpacity>
         </View>
     )
 }

@@ -119,7 +119,7 @@ export const saved_list = [
        id: 0,
        name: 'Christina',
        msg: 'Hi, Unfortunately the apartment is full...',
-       img: "https://randomuser.me/api/portraits/women/30.jpg",
+       img: "https://randomuser.me/api/portraits/women/1.jpg",
        date: "08 Nov 2017"
     },
     {
