@@ -17,7 +17,7 @@ export const BaseList = props => {
                         <Text style={{ color: '#2E2E2E', fontSize: 18, fontWeight: 'bold' }}>{props.name}</Text>
                         <Text style={{ color: '#6E6E6E', fontSize: 12, paddingTop: 4 }}>{props.date}</Text>
                     </View>
-                    <Text style={{ color: '#6E6E6E', fontSize: 15 }}>
+                    <Text style={{ color: '#6E6E6E', fontSize: 15 }} numberOfLines={1}>
                         {props.content}
                     </Text>
                 </View>

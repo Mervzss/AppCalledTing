@@ -118,14 +118,14 @@ export const saved_list = [
     {
        id: 0,
        name: 'Christina',
-       msg: 'Hi, Unfortunately the apartment is full...',
+       msg: 'Hi, Unfortunately the apartment is full and you dont need here',
        img: "https://randomuser.me/api/portraits/women/1.jpg",
        date: "08 Nov 2017"
     },
     {
        id: 1,
        name: 'Alexander',
-       msg: 'Hello, as we just agreed on by the phon',
+       msg: 'Hello, as we just agreed on by the phone your fired',
        img: "https://randomuser.me/api/portraits/men/4.jpg",
        date: "09 Nov 2017"
     }
