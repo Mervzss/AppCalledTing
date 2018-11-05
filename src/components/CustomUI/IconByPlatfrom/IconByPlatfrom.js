@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 
 export const TingButtonNext = props => {
     return (
-        <Icon name={Platform.OS === 'android' ? "md-arrow-dropright" : "ios-arrow-dropright"}  {...props} />
+        <Icon name={Platform.OS === 'android' ? "md-arrow-dropright" : "ios-arrow-dropright-circle"}  {...props} />
     )
 }
 
